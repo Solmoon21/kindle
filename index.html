@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unknown</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="menu">
+    <div class="description">
+        <h1>Sadim</h1>
+        <p> Place bulbs so that the light reaches every white tiles.
+            Black tiles block light, number (0-4) on them indicate the adjacent bulbs
+            Light bulbs do not illuminate each other.
+        </p>
+    </div>
+
+    <div>
+        <label for="player">Enter Your Name: </label>
+        <input type="text" name="player" id="name">
+    </div>
+
+    <br>
+
+    <div class="records off">
+        <h2>RECORDS</h2>
+        <div class="results">
+            <ul class="result-list">
+                <li>
+                    <div class="result">
+                        <div class="r-left">
+                            <div class="user">__User__</div>
+                        </div>
+                        <div class="r-right">
+                            <div class="score">__Time__</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="result">
+                        <div class="r-left">
+                            <div class="user">__User__</div>
+                        </div>
+                        <div class="r-right">
+                            <div class="score">__Time__</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="result">
+                        <div class="r-left">
+                            <div class="user">__User__</div>
+                        </div>
+                        <div class="r-right">
+                            <div class="score">__Time__</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="continue">
+        <button id="reload">Load</button>
+    </div>
+
+    <br><br>
+
+    <div class="preview off">
+        <div id="pdisplayName">Lass</div><br>
+        <div id="pdisplayTime">Seconds</div><br>
+        <table id="pgameTable"></table>
+    </div>
+    
+    <div class="selector-container">
+        <h2>Difficulty</h2>
+        
+
+        <div class="select-box">
+            
+            <div class="options-container active">
+                <div class="option">
+                    <input type="radio" class="radio" id="Easy" name="level">
+                    <label for="Easy"> EASY </label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" id="Medium" name="level">
+                    <label for="Medium"> MEDIUM </label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" id="Hard" name="level">
+                    <label for="Hard"> HARD </label>
+                </div>
+
+            </div>
+            <div class="selected">
+                Select Difficulty
+            </div>
+        </div>
+
+        <button id="play">GO!</button>
+    </div>
+    </div>
+    
+    
+    <script src="select.js"></script>
+
+    <div class="game off">
+        <div id="displayName">Lass</div>
+        <div id="displayTime">Seconds</div>
+        <table id="gameTable"></table>
+        <br><br>
+        <div id="Buttons">
+            <button id="pause">Pause</button>
+            <br><br>
+            <div class="pause-menu off">
+                <button id="unpause">Unpause</button>
+                <button id="save">Save</button>
+                <button id="restart">Restart</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
